@@ -1,0 +1,76 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+*.dylib
+*.egg
+*.eggs
+dist/
+build/
+*.egg-info/
+*.log
+
+# Django stuff:
+*.sqlite3
+*.db
+*.db-journal
+*.log
+
+# Local environment
+.env
+*.env
+venv/
+env/
+ENV/
+venv.bak/
+env.bak/
+
+# Static files
+static/
+media/
+
+# IDE / Editor specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Operating System-specific files
+.DS_Store
+Thumbs.db
+
+# Python virtual environment (for virtualenvwrapper or similar tools)
+.virtualenv/
+
+# Coverage directory used by tools like pytest-cov
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+
+# Django migrations
+migrations/
+
+# PyCharm settings (if using PyCharm)
+.idea/
+
+# MySQL/MariaDB database file
+*.sql
+
+# If you're using Docker and want to exclude Docker-related files
+docker-compose.override.yml
+docker-compose.yml
+
+# User-specific files
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Jupyter Notebook
+.ipynb_checkpoints/

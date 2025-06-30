@@ -28,7 +28,7 @@ venv.bak/
 env.bak/
 
 # Static files
-static/
+# static/
 media/
 
 # IDE / Editor specific files

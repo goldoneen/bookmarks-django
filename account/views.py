@@ -4,6 +4,7 @@ from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from .forms import LoginForm, UserRegistrationForm, UserEditForm, ProfileEditForm
 from .models import Profile
+from django.contrib import messages
 # from .models import Profile
 
 # Create your views here.
@@ -77,9 +78,17 @@ def edit(request):
     if user_form.is_valid() and profile_form.is_valid():
       user_form.save()
       profile_form.save()
+      messages.success(
+        request,
+        'Profile updated successfully.'
+      )
   else:
     user_form = UserEditForm(instance=request.user)
     profile_form = ProfileEditForm(instance=request.user.profile)
+    messages.error(
+      request,
+      "Error updating your profile."
+    )
   
   return render(
     request,

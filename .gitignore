@@ -26,6 +26,9 @@ env/
 ENV/
 venv.bak/
 env.bak/
+cert.crt
+cert.key
+
 
 # Static files
 # static/
